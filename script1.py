@@ -40,3 +40,30 @@ compteur = 0
 while compteur < 5:
     compteur += 1
     print("je suis à ", compteur)
+
+#def fonction
+
+def dire(nom_personne, message_personne):
+    print("{} : {}".format(nom_personne, message_personne))
+
+dire("Jason", "Salut tout le monde")
+dire("J'ai faim", "On va manger")
+
+def dire2(nom_personne="Tom", message_personne="pardefaut c'est Tom"):
+    print("{} : {}".format(nom_personne, message_personne))
+
+dire2()
+
+def show_inventory(*items):
+    for  item in items:
+        print(item)
+
+show_inventory("épé", "arc", "potion")
+
+ttc = lambda prixHT:prixHT + (prixHT * 20 / 100)
+
+print(ttc(24))
+
+calculer = lambda a, b : a + b
+
+print(calculer(14, 27))
