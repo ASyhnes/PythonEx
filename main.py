@@ -67,3 +67,17 @@ print(ttc(24))
 calculer = lambda a, b : a + b
 
 print(calculer(14, 27))
+
+# modularité
+
+import math
+
+resultat = math.sqrt(100)
+print(resultat)
+
+sinus = math.sin(42)
+
+import includes.player as player
+
+player.au_revoir()
+player.parler("Jason","Salut les gens")
